@@ -2,3 +2,24 @@ name: CombatTweaks
 main: org.mle.combattweaks.CombatTweaks
 version: 1.0
 author: MrLolEthan
+
+commands:
+        combattweaks:
+                description: The main CombatTweaks command.
+                usage: /<command> <Sub-Command> (arguments)
+                permission: combattweaks.main
+                permission-message: You don't have permission to do that.
+
+permissions:
+        combattweaks.main:
+                description: Allows access to the main CombatTweaks command.
+                default: true
+        combattweaks.reload:
+                description: Allows the player to reload the CombatTweaks plugin.
+                default: op
+        combattweaks.help:
+                description: Allows the player to view the CombatTweaks help text.
+                default: op
+        combattweaks.version:
+                description: Allows the player to see the current version of CombatTweaks.
+                default: op
